@@ -6,7 +6,7 @@
 A simple example for running SpringBoot application within Docker along with PostgreSQL.
 
 ## Building Project
-This project uses Maven build sytsem. Build the system by running:
+This project uses Maven build system. Build the system by running:
 
     ./mavenw install
 
@@ -16,7 +16,7 @@ After the build is complete. Build spring boot docker image by running:
 
     docker image build . -t springboot-docker
 
-## Statrting Container
+## Starting Container
 
 After docker image creation, run the whole stack i.e SpringBoot application and PostgreSQL by running:
 
