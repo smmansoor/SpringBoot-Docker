@@ -2,6 +2,7 @@ package com.example.boot;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -19,7 +20,7 @@ public class TodoController {
         toDoRepository.findAll().forEach(listTodos::add);
         return listTodos;
     }
-    @PostMapping
+    @PostMapping (consumes = MediaType.APPLICATION_JSON_VALUE)
     public void addToDo(@RequestBody Todos todos) {
         toDoRepository.save(todos);
     }

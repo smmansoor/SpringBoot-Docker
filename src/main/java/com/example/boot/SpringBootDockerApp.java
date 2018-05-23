@@ -12,21 +12,10 @@ import org.springframework.context.annotation.Bean;
 public class SpringBootDockerApp {
 
     private static final Logger log = LoggerFactory.getLogger(SpringBootDockerApp.class);
-    @Autowired
-    private ToDoRepository toDoRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(SpringBootDockerApp.class, args);
     }
 
-    @Bean
-    CommandLineRunner runner() {
-        return args -> {
-            toDoRepository.save(new Todos("Pay electricity bill", false));
-            toDoRepository.save(new Todos("Call property agent", false));
-            toDoRepository.save(new Todos("Buy milk and eggs", false));
 
-
-        };
-    }
 }
