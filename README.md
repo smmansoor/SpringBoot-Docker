@@ -10,12 +10,7 @@ This project uses Maven build system. Build the system by running:
 
     ./mavenw install
 
-## Build Docker Image
-
-After the build is complete. Build spring boot docker image by running:
-
-    docker image build . -t springboot-docker
-
+Maven build will also create container image for SpringBoot Docker applicaiton.
 ## Starting Container
 
 After docker image creation, run the whole stack i.e SpringBoot application and PostgreSQL by running:
@@ -23,4 +18,4 @@ After docker image creation, run the whole stack i.e SpringBoot application and 
     docker-compose up
 
 ## API
-After that API will be accessible at http://localhost:8085/todos        
+API will be accessible at http://localhost:8085/todos        
