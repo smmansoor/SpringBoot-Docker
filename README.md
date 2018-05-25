@@ -4,7 +4,8 @@
 # SpringBoot-Docker
 
 A simple example for running SpringBoot application within Docker along with PostgreSQL.
-
+This application is a simple todo API. It uses SpringBoot Data Rest to expose data repository as rest API.
+It also provide the Spring Data HAL browser.
 ## Building Project
 This project uses Maven build system. Build the system by running:
 
@@ -12,10 +13,9 @@ This project uses Maven build system. Build the system by running:
 
 Maven build will also create container image for SpringBoot Docker applicaiton.
 ## Starting Container
-
-After docker image creation, run the whole stack i.e SpringBoot application and PostgreSQL by running:
+After successful build, run the whole stack i.e SpringBoot application and PostgreSQL by running:
 
     docker-compose up
-
 ## API
-API will be accessible at http://localhost:8085/todos        
+API will be accessible at http://localhost:8085/todos. To access HAL browser goto http://localhost:8085/browser/index.html
+        
