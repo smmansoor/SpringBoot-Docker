@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/smmansoor/SpringBoot-Docker.svg?branch=master)](https://travis-ci.com/smmansoor/SpringBoot-Docker)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/1e1443531f8a4bf2b2a2d3c7cfbb48e8)](https://www.codacy.com/app/smmansoor/SpringBoot-Docker?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=smmansoor/SpringBoot-Docker&amp;utm_campaign=Badge_Grade)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 # SpringBoot-Docker
