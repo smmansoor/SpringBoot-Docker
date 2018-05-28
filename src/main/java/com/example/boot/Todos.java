@@ -5,21 +5,12 @@ import javax.persistence.*;
 @Entity
 @Table(name = "todos", schema = "todoapp")
 public class Todos {
-    public  Todos(String name, boolean completed) {
-        this.name = name;
-        this.completed = completed;
-    }
-
-    public Todos() {
-    }
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
     private boolean completed;
-
-
 
     public int getId() {
         return id;

@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @RepositoryRestResource(collectionResourceRel = "todo", path = "todo")
-public interface ToDoRepository extends CrudRepository<Todos,Integer> {
+public interface ToDoRepository extends CrudRepository<Todos, Integer> {
 }
